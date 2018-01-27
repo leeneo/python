@@ -5,7 +5,7 @@
 *.jpg
 *.rar
 node_modules
-
+/venv
 
 
 /.### OSX ###
