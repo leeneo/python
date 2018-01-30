@@ -7,10 +7,10 @@ bulletsBox=[]
 #app main entrence
 def main():
     #创建游戏窗口
-    screen=pygame.display.set_mode((480,852),0,32)
+    screen=pygame.display.set_mode((480,800),0,32)
 
     #接收背景图片，飞机图片
-    background=pygame.image.load('feiji/background.png').convert()
+    background=pygame.image.load('feiji/background.png')
     plane=pygame.image.load("feiji/hero1.png")
 
     #设置飞机位置
@@ -20,9 +20,9 @@ def main():
     #设置飞机移速
     speed=10
 
-
     while True:
         
+        screen.fill(0)
         #粘贴图片到游戏窗口
         screen.blit(background,(0,0))
 
